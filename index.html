@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/pizza.jpg" type="image/x-icon">
+  <!-- Smythe Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Restaurant Ordering app</title>
+</head>
+<body>
+
+  <header>
+    
+  </header>
+  
+  <main>
+    <section id="order-menu">
+    </section>
+
+    <section id="complete-order">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+
+    
+        
+        <section id="modal" class="open-modal d-none">
+    <div class="modal-container">
+      <h3>Enter card details</h3>
+      <form id="order-form">
+        <input
+          type="text"
+          name="fullName" 
+          aria-label="Full name"
+          placeholder="Enter your name"
+          required
+        >
+        <input
+          type="tel"
+          pattern="[0-9\s]{16}"
+          maxlength="16"
+          name="cardNumber" 
+          aria-label="Full name"
+          placeholder="Enter card number"
+          required
+        >
+        <input
+          type="text"
+          type="tel"
+          pattern="[0-9\s]{3}"
+          maxlength="3"
+          name="cvv" 
+          aria-label="CVV"
+          placeholder="Enter CVV"
+          required
+        >
+        <button type="submit" class="btn btn-normal">Pay</button>
+    </form>
+    </div>
+  </section>
+  
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

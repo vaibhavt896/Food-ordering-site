@@ -1,0 +1,278 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Smythe', cursive;
+  font-weight: 400;
+  color: #000;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(images/food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 210px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+
+main {
+  padding: 2.75rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.order {
+  display: flex;
+  border-bottom: 1px solid #D2D2D2;
+  width: 100%;
+  padding: 2rem;
+  background: #f0c808;
+  border-radius: 10px;
+    box-shadow: 3px 3px 6px #04030f; 
+  
+  
+}
+
+.order-details {
+  padding: 0 0.5rem;
+  width: 75%;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.order-details p {
+  margin: 0.5rem 0 0.75rem;
+  color: #8B8B8B;
+}
+
+.order-details .order-price {
+  font-size: 1.25rem;
+  color: #000;
+  margin: 0.5rem 0;
+}
+
+.order-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-add button {
+  background: whitesmoke;
+  border: 1.5px solid #04030f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.order-add button:hover {
+  border-color: #ccc;
+  background-color: #ccc;
+  
+}
+
+.order-add img {
+  width: 27px;
+  height: 28.5px;
+}
+
+.remove-order{
+    border-radius: 50%;
+    padding: 0px 10px;
+    margin: 0 10px;
+    border: none
+}
+.remove-order:hover{
+     border-color: #ccc;
+  background-color: #ccc;
+}
+
+.order-condition {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3.25rem;
+  border-radius: 3px;
+  background: #dd1c1a
+}
+
+.order-success {
+  background: #dd1c1a;
+  color: #04030f;
+  font-size: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 6px #000;
+  margin: 0 auto;
+  height: 220px;
+    width: 410px;
+}
+
+
+.order-empty {
+  background: #e3f0f5;
+  color: #0c88b9;
+}
+
+/* COMPLETE ORDER */
+.d-none {
+  display: none;
+}
+
+#complete-order h2 {
+  text-align: center;
+}
+
+.order-items {
+  margin: 3rem 0;
+  background: #e8e8e9;
+  padding: 2.5rem;
+  border-radius: 20px
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.order-item h2 span {
+  color: #bbb;
+  font-size: 0.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  top: -2px;
+  left: 6px;
+  cursor: pointer;
+}
+
+.order-item h2 span:hover {
+  color: #bb0303;
+  font-weight: bold;
+}
+
+.order-item p {
+  font-size: 1.25rem;
+}
+
+.order-item p.item-emoji {
+  font-size: 4rem;
+  width: 80px;
+}
+
+.total-price {
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  border-top: 2px solid #393333;
+}
+
+.btn-normal {
+  width: 100%;
+  padding: 1.125rem;
+  background-color: #ff0022;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 30px
+
+}
+
+.btn-normal:hover {
+  background-color: #07aa74;
+}
+
+/* MODAL */
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  max-height: 85vh;
+  background-color: #fffbff;
+  box-shadow: 0px 0px 100px 20px rgba(51, 51, 51, 0.5);
+  border-radius: 4px;
+  padding: 3rem 1.5rem 1.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-y: auto;
+}
+
+.modal-container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.modal-container input {
+  height: 72px;
+  width: 100%;
+  border: 1.29664px solid #757575;
+  border-radius: 3.88991px;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+}
+
+.modal-container form {
+  margin-top: 2.75rem;
+}
+
+.modal-container .btn-normal {
+  margin: 1.75rem 0;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .container {
+    width: 600px;
+    padding: 1.4375rem 2.875rem;
+  }
+
+  .order-details {
+    padding: 0 2rem;
+  }
+
+  .modal-container {
+    width: 508px;
+  }
+}
+
+
+
